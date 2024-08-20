@@ -130,3 +130,4 @@ function BackDrops:set_img(window, idx)
 end
 
 return BackDrops:init()
+
