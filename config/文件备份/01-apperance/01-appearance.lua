@@ -12,13 +12,17 @@ return {
    -- color scheme
    colors = colors,
 
-   -- transparent background
+   -- background
    background = {
+      {
+         source = { File = wezterm.GLOBAL.background },
+         horizontal_align = 'Center',
+      },
       {
          source = { Color = colors.background },
          height = '100%',
          width = '100%',
-         opacity = 0.8, -- 设置透明度，0.8 可以根据你的需要调整
+         opacity = 0.96,
       },
    },
 
@@ -43,6 +47,8 @@ return {
    window_close_confirmation = 'NeverPrompt',
    window_frame = {
       active_titlebar_bg = '#090909',
+      -- font = fonts.font,
+      -- font_size = fonts.font_size,
    },
    inactive_pane_hsb = {
       saturation = 0.9,

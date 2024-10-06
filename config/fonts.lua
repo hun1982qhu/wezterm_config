@@ -6,7 +6,7 @@ local font2 = 'Nerd Font'
 local font3 = 'Agave Nerd Font'
 local font4 = 'FiraCode Nerd Font'
 
-local font_size = platform().is_mac and 12 or 16
+local font_size = platform().is_mac and 18 or 16
 
 return {
    font = wezterm.font_with_fallback({
