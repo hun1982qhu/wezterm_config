@@ -28,11 +28,11 @@ if is_mac then
       font_size = font_size,
       freetype_load_target = 'Normal', ---@type 'Normal'|'Light'|'Mono'|'HorizontalLcd'
       freetype_render_target = 'Normal', ---@type 'Normal'|'Light'|'Mono'|'HorizontalLcd'
-      warn_about_missing_glyphs = true,
+      warn_about_missing_glyphs = false,
    }
 else
    -- 非 macOS 配置
-   local font_size = 16 -- 定义字体大小
+   local font_size = 17 -- 定义字体大小
    return {
       font = wezterm.font_with_fallback({
          font1,
@@ -43,6 +43,6 @@ else
       font_size = font_size,
       freetype_load_target = 'Normal', ---@type 'Normal'|'Light'|'Mono'|'HorizontalLcd'
       freetype_render_target = 'Normal', ---@type 'Normal'|'Light'|'Mono'|'HorizontalLcd'
-      warn_about_missing_glyphs = true,
+      warn_about_missing_glyphs = false,
    }
 end
