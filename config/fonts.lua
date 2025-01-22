@@ -14,7 +14,7 @@ local is_mac = platform().is_mac
 
 if is_mac then
    -- macOS 配置
-   local font_size = 18 -- 定义字体大小
+   local font_size = 21 -- 定义字体大小
    return {
       font = wezterm.font_with_fallback({
          font1,
